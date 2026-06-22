@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1>Student Registration</h1>
+    <forms>
+        <fieldset>
+            <legend>Basic Informration</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" required/><br><br>
+        <label for="email"> Email</label>
+        <input type="email" id="email" required/><br><br>
+        <label for="date">DOB</label>
+        <input type="date" id = "date" required/><br><br>
+        <label for="gender">Gender</label>
+        <input name="Gender" type = "radio" id = "gender"/>Male
+        <input name="Gender" type = "radio" id = "gender"/>Female
+        <input name="Gender" type = "radio" id = "gender"/>Others<br><br>
+        <label for="age">Age:</label>
+        <input type=""number" id = "age" min="18" max="60" required/>
+        <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Acedmaic Informration</legend>
+        <label>Branch</label>
+        <select>
+            <option>CSE</option>
+            <option>CAI</option>
+            <option>CS</option>
+            <option>CDS</option>
+            <option>ECE</option>
+            <option>CAIML</option>
+            <option>CIVIL</option>
+        </select><br><br>
+        <label for="bio">Bio</label>
+        <textarea id="bio"
+        placeholder="Enter Something intertesting..."/>
+        </textarea><br><br>
+        <label>Resume:</label>
+        <input type="file"/><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>skills</legend>
+        <label for="skill">SKILLS</label><br><br>
+        <input  type = "radio" id = "skill"/>c
+        <input  type = "radio" id= "skill"/>python
+        <input  type = "radio" id = "skill"/>java
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Final submission</legend>
+        <input type ="checkbox"/>
+        <label> I accept this info is correct as per my knowledge</label><br><br>
+        <button type = "submit">Submit</button>
+        </fieldset>
+
+    </forms>
+    </center>
+</body>
+</html>
