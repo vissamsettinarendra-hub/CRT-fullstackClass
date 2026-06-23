@@ -1,0 +1,53 @@
+h1{
+   /* color: palevioletred; */
+   font-style: 20px;
+}
+p{
+    color:blue;
+    background-color: pink;
+}
+/*class selector*/ 
+.title{
+    color: brown;
+}
+/*id selector*/
+#main-heading{
+    color: crimson;
+}
+
+/*universal Selector*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Group Selector*/
+/*h1,p,button{
+    color: whitesmoke;
+}*/
+
+/*Desecndent Selector*/
+div li{
+    color: maroon;
+    font-size: 100px;
+}
+
+/*child selector*/
+div > li{
+    color: green;
+}
+/*Attribute selector*/
+input[type = "text"]{
+    background-color: lightpink;
+}
+input[type = "password"]{
+    background-color: lightseagreen;
+}
+/*Colors*/
+h1{
+    /* color: rosybrown; */
+    /*Hexadecimal values:*/
+    /* color:#0000ff; */
+    /*RGB->0 --255*/
+    color: rgb(55, 30, 155);
+
+}
