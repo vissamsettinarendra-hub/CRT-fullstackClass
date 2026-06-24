@@ -1,0 +1,77 @@
+.box{
+    height: 80px;
+    width: 80px;
+    background-color: skyblue;
+    position: relative;
+    animation: move  2s infinite alternate;
+    animation: bounce 3s 3;
+}
+@keyframes move{
+    from{
+        left:0
+    }
+    to{
+        left:300px
+    }
+}  
+@keyframes bounce{
+    0%{top:0;background-color:red;}
+    50%{left:200px;background-color: yellow;}
+    100%{left:0;background-color: blue;}
+}
+.box1{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+    animation: colorchange 3s infinite alternate;
+}
+@keyframes colorchange {
+    from{
+        background-color: yellow;
+        left:0
+    }
+    to{
+        background-color: palevioletred;
+        left: 300px;
+    }
+}
+
+ .box2 {
+            width: 50px;
+            height: 50px;
+            border: 5px solid lightgray;
+            border-top: 5px solid blue;   /* top color for spinner effect */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*mobile:576px
+tablet:768px
+laptop:992px
+desktop:12208*/
+img{
+    /*over flow*/
+    width: 500px;
+}
+/*solution*/
+img{
+    max-width: 100%;
+    height:auto;
+
+}
+:root{
+    --primary-color:red;
+    --secondary-color:blue;
+    --dark:black;
+}
+h5{
+    background-color: var(--primary-color);
+}
