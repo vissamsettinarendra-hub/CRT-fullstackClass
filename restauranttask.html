@@ -3,125 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restaurant</title>
+    <title>Love Birds Restaurant</title>
     <link rel="stylesheet" href="restruranttask.css">
 </head>
 <body>
+
     <header>
-    <h1>Welcome To Love Birds Restaurant </h1>
-<div class="num">
-<nav> 
-    <a href="#about.html">About</a> 
-    <a href="#menu.html">Menu</a> 
-    <a href="#special.html">Special Dishes</a> 
-    <a href="#booking">Book Table</a> 
-    <a href="#contact">Contact</a>
-    </nav>
-</div>
-<section>
-<h2>Restaurant Introduction</h2>
-<p>
-Delicious Bites is one of the best family restaurants in the city. We offer
-South Indian, North Indian, Chinese, and fast food items. Our chefs prepare
-food with fresh ingredients and authentic flavors.
-</p>
-</section>  
-<section class="table1">
-            <h2>Menu Card</h2>
+        <h1>Welcome To Love Birds Restaurant</h1>
+        <nav class="num">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#special">Special Dishes</a>
+            <a href="#booking">Book Table</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-            <table border="1">
-                <tr>
-                    <th>Dish Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                </tr>
+    <section id="about">
+        <h2>Restaurant Introduction</h2>
+        <p>
+            Love Birds Restaurant is one of the best family restaurants in the city.
+            We offer South Indian, North Indian, Chinese, and fast food items.
+            Our chefs prepare food with fresh ingredients and authentic flavors.
+        </p>
+    </section>
 
-                <tr>
-                    <td>Masala Dosa</td>
-                    <td>South Indian</td>
-                    <td>₹80</td>
-                </tr>
-
-                <tr>
-                    <td>Paneer Butter Masala</td>
-                    <td>North Indian</td>
-                    <td>₹220</td>
-                </tr>
-
-                <tr>
-                    <td>Veg Fried Rice</td>
-                    <td>Chinese</td>
-                    <td>₹150</td>
-                </tr>
-
-                <tr>
-                    <td>Chicken Biryani</td>
-                    <td>Main Course</td>
-                    <td>₹250</td>
-                </tr>
-
-                <tr>
-                    <td>Ice Cream Sundae</td>
-                    <td>Dessert</td>
-                    <td>₹120</td>
-                </tr>
-            </table>
-        </section>
-<section>
-            <h2>Special Dishes</h2>
-
-            <table border="1">
+    <section id="menu" class="table1">
+        <h2>Menu Card</h2>
+        <table>
             <tr>
-                    <th>Dish Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                </tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Masala Dosa</td>
+                <td>South Indian</td>
+                <td>₹80</td>
+            </tr>
+            <tr>
+                <td>Paneer Butter Masala</td>
+                <td>North Indian</td>
+                <td>₹220</td>
+            </tr>
+            <tr>
+                <td>Veg Fried Rice</td>
+                <td>Chinese</td>
+                <td>₹150</td>
+            </tr>
+            <tr>
+                <td>Chicken Biryani</td>
+                <td>Main Course</td>
+                <td>₹250</td>
+            </tr>
+            <tr>
+                <td>Ice Cream Sundae</td>
+                <td>Dessert</td>
+                <td>₹120</td>
+            </tr>
+        </table>
+    </section>
 
-                <tr>
-                    <td>Mutton</td>
-                    <td>South Indian</td>
-                    <td>₹500</td>
-                </tr>
+    <section id="special">
+        <h2>Special Dishes</h2>
+        <table>
+            <tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Mutton Curry</td>
+                <td>South Indian</td>
+                <td>₹500</td>
+            </tr>
+            <tr>
+                <td>Dhokla</td>
+                <td>North Indian</td>
+                <td>₹400</td>
+            </tr>
+            <tr>
+                <td>Schezwan Noodles</td>
+                <td>Chinese</td>
+                <td>₹500</td>
+            </tr>
+        </table>
+    </section>
 
-                <tr>
-                    <td>Dokala</td>
-                    <td>North Indian</td>
-                    <td>₹400</td>
-                </tr>
+    <section id="booking">
+        <h2>Table Booking Form</h2>
+        <form>
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <tr>
-                    <td>Snake Noodiles</td>
-                    <td>Chinese</td>
-                    <td>₹500</td>
-                </tr>
-            </table>
-</section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-<section >
-            <h2>Table Booking Form</h2>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-            <form>
-                <label for="name">Customer Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="time">Booking Time:</label>
+            <input type="time" id="time" name="time" required>
 
-                <label for="guests">Number of Guests:</label>
-                <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <label for="message">Special Request:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
 
-                <label for="date">Booking Date:</label>
-                <input type="date" id="date" name="date" required><br><br>
+            <input type="submit" value="Book Table">
+        </form>
+    </section>
 
-                <label for="time">Booking Time:</label>
-                <input type="time" id="time" name="time" required><br><br>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Love Birds Restaurant, Main Road, Hyderabad</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> lovebirdsrestaurant@gmail.com</p>
+    </section>
 
-                <label for="message">Special Request:</label>
-                <textarea id="message" name="message"></textarea><br><br>
-
-                <input type="submit" value="Book Table">
-            </form>
-        </section>
+</body>
+</html>
